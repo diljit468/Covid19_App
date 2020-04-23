@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:id="@+id/back"
+        android:src="@drawable/ic_arrow_back_black_24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:text="Country Information"
+        android:textSize="20dp"
+        android:gravity="center"
+
+        android:textColor="#1F5757"
+        android:id="@+id/title"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/view1"
+        android:background="#A3BCBC"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@+id/view1"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/death"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/name"
+        android:text="Death cases"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deathNum"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="15dp"
+        android:text="name"
+        android:textColor="#FA0000"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/active"
+        android:layout_below="@+id/death"
+        android:text="Active cases"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/activeNum"
+        android:layout_below="@+id/deathNum"
+        android:textColor="#FF9800"
+        android:layout_alignParentRight="true"
+        android:text="name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recover"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/active"
+        android:text="Recover cases"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/recoverNum"
+        android:textColor="#007C05"
+        android:layout_below="@+id/activeNum"
+        android:layout_alignParentRight="true"
+        android:text="name"/>
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+    android:layout_below="@+id/recover"
+    android:id="@+id/view2"
+    android:background="#A3BCBC"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/all"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/view2"
+        android:text="All Cases"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/allNum"
+        android:textColor="#000"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view2"
+        android:text="name"/>
+
+</RelativeLayout>
